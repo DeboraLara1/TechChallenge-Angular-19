@@ -1,0 +1,10 @@
+.button {
+  width: 250px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px;
+  font-family: "inter";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}

@@ -1,0 +1,44 @@
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.donut-chart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-chart {
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  stroke: #e6e6e6;
+}
+
+.circle {
+  transition: stroke-dasharray 1s ease-in-out;
+}
+
+.legend {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.color {
+  width: 2%;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}

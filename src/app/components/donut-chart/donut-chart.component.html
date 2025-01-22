@@ -1,0 +1,71 @@
+<div class="chart-container">
+  <div class="donut-chart">
+    <!-- Gráfico de rosca -->
+    <svg
+      width="150"
+      height="150"
+      viewBox="0 0 36 36"
+      class="circular-chart donut"
+    >
+      <!-- Fundo -->
+      <circle
+        class="circle-bg"
+        cx="18"
+        cy="18"
+        r="15.9"
+        stroke-width="3"
+        fill="none"
+      />
+      <!-- Seções do gráfico -->
+      <circle
+        class="circle"
+        cx="18"
+        cy="18"
+        r="15.9"
+        stroke-width="3"
+        fill="none"
+        stroke-dasharray="25 75"
+        stroke-dashoffset="25"
+      ></circle>
+      <circle
+        class="circle"
+        cx="18"
+        cy="18"
+        r="15.9"
+        stroke-width="3"
+        fill="none"
+        stroke-dasharray="25 75"
+        stroke-dashoffset="-25"
+      ></circle>
+      <circle
+        class="circle"
+        cx="18"
+        cy="18"
+        r="15.9"
+        stroke-width="3"
+        fill="none"
+        stroke-dasharray="25 75"
+        stroke-dashoffset="-50"
+      ></circle>
+    </svg>
+    <!-- Legenda -->
+    <div class="legend">
+      <div class="legend-item">
+        <span class="color" style="background-color: #0056ff"></span>
+        Fundos de investimento
+      </div>
+      <div class="legend-item">
+        <span class="color" style="background-color: #9d00ff"></span>
+        Tesouro Direto
+      </div>
+      <div class="legend-item">
+        <span class="color" style="background-color: #ff006c"></span>
+        Previdência Privada
+      </div>
+      <div class="legend-item">
+        <span class="color" style="background-color: #ff9a00"></span>
+        Bolsa de Valores
+      </div>
+    </div>
+  </div>
+</div>

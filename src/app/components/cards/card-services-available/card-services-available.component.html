@@ -1,0 +1,46 @@
+<div class="card">
+  <div class="card-body">
+    <img
+      src="../../../assets/png/Pixels3-card.png"
+      alt="marca da água"
+      class="watermark-one"
+    />
+    <div class="content-card">
+      <div>
+        <h1 class="title-card">Confira os serviços disponíveis</h1>
+      </div>
+      <div class="cards-small-services">
+        <app-card-small
+          [iconCard]="'../../../assets/svg/icone-empréstimo.svg'"
+          [titleCardSmall]="'Empréstimo'"
+        ></app-card-small>
+        <app-card-small
+          [iconCard]="'../../../assets/svg/icone-cartões.svg'"
+          [titleCardSmall]="'Meus cartões'"
+          routerLink="/otherServices/myCards" routerLinkActive="router-link-active"
+        ></app-card-small>
+        <app-card-small
+          [iconCard]="'../../../assets/svg/icone-doações.svg'"
+          [titleCardSmall]="'Doações'"
+        ></app-card-small>
+        <app-card-small
+          [iconCard]="'../../../assets/svg/icone-pix.svg'"
+          [titleCardSmall]="'Pix'"
+        ></app-card-small>
+        <app-card-small
+          [iconCard]="'../../../assets/svg/icone-seguros.svg'"
+          [titleCardSmall]="'Seguros'"
+        ></app-card-small>
+        <app-card-small
+          [iconCard]="'../../../assets/svg/credito-celular.svg'"
+          [titleCardSmall]="'Crédito celular'"
+        ></app-card-small>
+      </div>
+    </div>
+    <img
+      src="../../../assets/png/Pixels3-card.png"
+      alt="marca da água"
+      class="watermark"
+    />
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="container">
+    <div class="user">
+      <div class="user-name">Joana da Silva Oliveira</div>
+      <img
+        src="../../../assets/svg/icon-user.svg"
+        alt="ícone usuário"
+       
+        class="user-icon"
+      />
+    </div>
+  </div>
+</header>
+
+<div class="menu" *ngIf="isOpenMenuProfile">
+  <ul
+    class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-center"
+    id="menu"
+  >
+    <li class="nav-item">
+      <span
+        class="ms-1 d-sm-inline option-menu close-menu"
+        (click)="closeMenu()"
+        >X</span
+      >
+    </li>
+    <li class="nav-item">
+      <a routerLink="/myAccount" class="nav-link align-middle px-0">
+        <span class="ms-1 d-sm-inline option-menu">Minha conta</span>
+      </a>
+    </li>
+    <div class="line"></div>
+    <li>
+      <a
+        href="myAccount"
+        data-bs-toggle="collapse"
+        class="nav-link px-0 align-middle"
+      >
+        <span class="ms-1 d-sm-inline option-menu">Configurações</span>
+      </a>
+    </li>
+    <div class="line"></div>
+    <li>
+      <a href="investments" class="nav-link px-0 align-middle">
+        <span class="ms-1 d-sm-inline option-menu">Sair</span>
+      </a>
+    </li>
+  </ul>
+</div>

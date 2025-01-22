@@ -1,0 +1,58 @@
+<header class="header">
+  <!-- Logo -->
+  <div class="logo">
+    <img
+      src="./../../assets/img/Logo.png"
+      alt="Bytebank Logo"
+      class="logo-image"
+      id="logo"
+    />
+    <img
+      src="./../../assets/img/Logo-signo.png"
+      alt="Logo Mobile"
+      class="logo-image logo-mobile"
+      id="logo-mobile"
+    />
+  </div>
+
+  <!-- Navegação -->
+  <nav class="nav">
+    <a href="#" class="nav-link">Sobre</a>
+    <a href="#" class="nav-link">Serviços</a>
+  </nav>
+
+  <!-- Botões -->
+  <div class="buttons">
+    <button class="btn primary-btn" (click)="toggleNewUser()">
+      Abrir minha conta
+    </button>
+    <button class="btn secondary-btn" (click)="toggleLogin()">Já tenho conta</button>
+  </div>
+
+  <div class="hamburger-menu" id="hamburgerMenu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <!-- Menu Lateral (side menu) -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" id="closeMenu">Voltar ao inicio</div>
+    <div class="links-nav">
+      <a href="#" class="nav-link">Sobre</a>
+      <a href="#" class="nav-link">Serviços</a>
+      <div class="buttons-menu-sanduiche">
+        <button
+          class="btn primary-btn"
+          (click)="toggleNewUser()"
+          routerLinkActive="router-link-active"
+        >
+          Abrir minha conta
+        </button>
+        <button class="btn secondary-btn"  (click)="toggleLogin()">Já tenho conta</button>
+      </div>
+    </div>
+  </div>
+</header>
+<app-login *ngIf="showLogin" class="overlay"></app-login>
+<app-new-account *ngIf="showNewUser" class="overlay"></app-new-account>

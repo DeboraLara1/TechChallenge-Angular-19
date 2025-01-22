@@ -1,0 +1,72 @@
+<div class="card">
+  <div class="card-body">
+    <img
+      src="../../../assets/png/Pixels3-card.png"
+      alt="marca da água"
+      class="watermark-one"
+    />
+    <div class="content-card">
+      <div>
+        <h1 class="title-card">Meus cartões</h1>
+      </div>
+      <div>
+        <p class="typeCard">Cartão físico</p>
+        <div class="my-card">
+          <app-card-payment-card-view
+            [customStyle]="{ 'background-color': '#004d61' }"
+            [nameCard]="'Byte'"
+            [typeCard]="'Platinum'"
+            [nameResponsibleCard]="'Joana Fonseca Gomes'"
+            [numbercard]="'• • • • • • • •'"
+          ></app-card-payment-card-view>
+          <div class="buttons">
+            <app-button-custom
+              [descriptionButton]="'Concluir transação'"
+              [customStyle]="{
+                'background-color': '#FF5031',
+                color: '#FFFFFF'
+              }"
+            ></app-button-custom
+            ><app-button-custom
+              [descriptionButton]="'Concluir transação'"
+              [customStyle]="{ border: '2px solid #BF1313', color: '#BF1313' }"
+            ></app-button-custom>
+            <p>Função: Débito/Crédito</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="typeCard">Cartão digital</p>
+        <div class="my-card">
+          <app-card-payment-card-view
+            [customStyle]="{ 'background-color': '#8b8b8b' }"
+            [nameCard]="'Byte'"
+            [typeCard]="'Platinum'"
+            [nameResponsibleCard]="'Joana Fonseca Gomes'"
+            [numbercard]="'• • • • • • • •'"
+          ></app-card-payment-card-view>
+          <div class="buttons">
+            <app-button-custom
+              [descriptionButton]="'Concluir transação'"
+              [customStyle]="{
+                'background-color': '#FF5031',
+                color: '#FFFFFF'
+              }"
+            ></app-button-custom
+            ><app-button-custom
+              [descriptionButton]="'Concluir transação'"
+              [customStyle]="{ border: '2px solid #BF1313', color: '#BF1313' }"
+            ></app-button-custom>
+            <p>Função: Débito</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="../../../assets/png/Pixels3-card.png"
+      alt="marca da água"
+      class="watermark"
+    />
+  </div>
+</div>

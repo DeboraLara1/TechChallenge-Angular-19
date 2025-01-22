@@ -1,0 +1,54 @@
+.card {
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #cbcbcb;
+  margin-top: 34px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title-card {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.title-total {
+  font-size: 25px;
+  font-weight: 400;
+  color: #004d61;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-card-estatistica {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.watermark-one {
+  position: absolute;
+  transform: translate(340.5%, -9%);
+  z-index: 1;
+  pointer-events: none;
+  width: 18%;
+  height: 177.47px;
+}
+
+.watermark {
+  position: absolute;
+  transform: translate(-9%, -91%);
+  z-index: 1;
+  pointer-events: none;
+  width: 18%;
+  height: 177.47px;
+}

@@ -1,0 +1,108 @@
+/* Estilização geral do Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-column,
+.footer-column-desenvolvido {
+  text-align: left;
+  margin: 10px 20px;
+  flex: 1;
+  max-width: 30%;
+  min-width: 20%;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+.footer-column p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer-column-desenvolvido .logo-branco {
+  width: 10%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 2.5%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas médias (até 768px) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column,
+  .footer-column-desenvolvido {
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Telas pequenas (até 480px) */
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-link,
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 20px;
+  }
+}

@@ -1,0 +1,150 @@
+.card {
+  height: 402px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #004d61;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 402px;
+}
+
+.content-one {
+  margin-left: 24px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 24px;
+}
+
+.date {
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+.content-two {
+  margin: 12.6% 5.2% 0px 0px;
+  color: #ffffff;
+  width: 40%;
+}
+
+.saldo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 24.2px;
+  align-items: center;
+}
+
+.saldo span {
+  font-size: 20px;
+  line-height: 24.2px;
+  margin-right: 25px;
+}
+
+.line {
+  width: 100%;
+  height: 0px;
+  top: 134px;
+  left: 408px;
+  gap: 0px;
+  opacity: 0px;
+  border: 2px solid #ff5031;
+  margin: 16px 0 16px 0;
+}
+
+.type-saldo {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+.saldo {
+  font-size: 31px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: auto;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.watermark-ilustracao,
+.watermark {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .saldo {
+    font-size: 25px;
+  }
+
+  .content-two {
+    margin: 19.6% 5.2% 0px 0px;
+  }
+}
+@media only screen and (max-width: 752px) {
+  .saldo {
+    font-size: 25px;
+  }
+
+  .content-card {
+    flex-wrap: wrap;
+  }
+  .watermark {
+    width: 20%;
+    display: block;
+  }
+
+  .watermark-ilustracao {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .card {
+    height: 533px;
+  }
+  .content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  .content-one,
+  .content-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    width: 80%;
+  }
+
+  .watermark {
+    width: 35%;
+    bottom: 0%;
+    left: 65%;
+    display: block;
+  }
+
+  .watermark-ilustracao {
+    display: block;
+  }
+}
